@@ -54,4 +54,4 @@ ALTER TABLE "courses_video_courses" ADD FOREIGN KEY ("courses") REFERENCES "cour
 
 ALTER TABLE "user" ADD FOREIGN KEY ("role") REFERENCES "roles" ("id");
 
-ALTER TABLE "courses_video_courses" ADD FOREIGN KEY ("id") REFERENCES "user" ("courses");
+ALTER TABLE "user" ADD FOREIGN KEY ("courses") REFERENCES "courses_video_courses" ("id");
